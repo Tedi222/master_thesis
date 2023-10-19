@@ -1,0 +1,6 @@
+rootpath: /data_test_Marvin/data_subj
+subpath:  # alternatives: connectivity, connectivity_sift
+connmat_name: con_mat # connectome.csv, connectome_fa.csv, connectome_md.csv, connectome_rd.csv
+annotations_file: /data_test_Marvin/group_labels.csv
+regionlabel_file: /datadir/ppmi_preproc/HOA_labelID_110.txt
+resultspath: /datadir/connectivity_results
