@@ -1,0 +1,38 @@
+
+## subj_list: /datadir/PPMI/ppmi_preproc/dwi_reorganized/subject_list.txt
+#subj_list: /datadir/PPMI/ppmi_preproc/dwi_reorganized/subject_list-1.txt
+#data_root: /datadir/PPMI/ppmi_preproc/
+#rundir: /datadir/PPMI/rundir_mp
+## dwi_ = 'dwi_reorganized/'
+## t1_ = 't1_reorganized/'
+#pipeline_name: test_profile5
+#
+#
+#templates:
+#    dwi:         dwi_reorganized/{_id}/eddy_corrected_data.nii.gz
+#    t1:          t1_reorganized/{id_t1}/*.nii.gz
+#    mask:        dwi_reorganized/{_id}/nodif_brain_mask.nii.gz
+#    standard:    /projectdir/data/mni_icbm152_nlin_asym_09c/mni_icbm152_t1_tal_nlin_asym_09c.nii
+#    atlas:       /projectdir/data/parcAtl_mni.nii.gz
+#    bvals:       dwi_reorganized/{_id}/bvals
+#    bvecs:       dwi_reorganized/{_id}/eddy_corrected_data.eddy_rotated_bvecs
+
+
+subj_list: /home/Data/marvin_data/subject_list.txt
+data_root: /home/Data/marvin_data
+rundir: /home/teodorps/filtering_results/finta_test2
+
+pipeline_name: finta_test2
+
+templates:
+
+    dwi:         /home/Data/data_test_Marvin/data_subj/subj{_id}/eddy_corrected_data.nii.gz
+    t1:          /home/Data/data_test_Marvin/data_subj/subj{_id}/T1.nii.gz
+    mask:        /home/Data/data_test_Marvin/data_subj/subj{_id}/nodif_brain_mask.nii.gz
+    standard:    /home/Data/data_test_Marvin/mni_icbm152_t1_tal_nlin_asym_09c.nii
+    atlas:       /home/Data/data_test_Marvin/parcAtl_mni.nii.gz
+    bvals:       /home/Data/data_test_Marvin/data_subj/subj{_id}/bvals
+    bvecs:       /home/Data/data_test_Marvin/data_subj/subj{_id}/rotated_bvecs
+    config_file: /home/teodorps/tests/finta_runfiles/find_threshold_config.yaml
+    model:       /home/teodorps/tests/finta_runfiles/best_model_contrastive_tractoinferno_hcp.pt
+
